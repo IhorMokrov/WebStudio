@@ -1,0 +1,127 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+
+.footer__container {
+  display: flex;
+}
+
+// Contacts
+
+.footer-contacts__address {
+  margin-top: 20px;
+}
+
+.address__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $focus-text-color;
+}
+
+// Footer Contacts
+.address__contacts {
+  @extend %list;
+  margin-top: 9px;
+  line-height: 0;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $cubic-animation, fill 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    color: $focus-color;
+    fill: $focus-color;
+  }
+}
+
+// Footer Social
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.social-footer__title {
+  margin-top: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $focus-text-color;
+}
+
+.social-footer__social-list {
+  margin-top: 20px;
+}
+
+.social-list__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $primary-white;
+}
+
+// Subscribe
+
+.footer__subscribe-footer {
+  margin-left: 93px;
+}
+
+.subscribe-footer__form {
+  margin-top: 20px;
+}
+
+.subscribe-footer__title {
+  margin-top: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $focus-text-color;
+}
+
+.subscribe-footer__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-footer__button {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 28px;
+
+  color: $primary-white;
+  font-weight: 700;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+
+  background: $focus-color;
+  border: 1px solid $focus-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-footer__icon {
+  margin-left: 10px;
+}

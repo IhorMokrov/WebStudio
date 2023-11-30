@@ -1,0 +1,45 @@
+/* Features */
+
+.features {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__features {
+  margin-bottom: 94px;
+}
+
+.features__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: $button-grey;
+  border-radius: 4px;
+}
+
+.features__image {
+  fill: $inactive-black;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $inactive-black;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.features__text {
+  margin: 0;
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section__title--is-hidden {
+  @extend %is-hidden;
+}
