@@ -1,9 +1,15 @@
 /* Header */
 .page-header {
-  border-bottom: 1px solid #ececec;
+  height: 60px;
+  outline: 1px solid rgb(0, 255, 72);
+  //   border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
-  @include flex-center();
-  height: 80px;
+  //   height: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+
+  outline: 1px solid red;
 }
