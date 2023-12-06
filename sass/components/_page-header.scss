@@ -1,15 +1,15 @@
 /* Header */
 .page-header {
+  display: flex;
+  align-items: center;
   height: 60px;
-  outline: 1px solid rgb(0, 255, 72);
+  //   height: 80px;
+
   //   border-bottom: 1px solid #ececec;
+
+  // outline: 2px solid red;
 }
 
 .page-header__container {
-  //   height: 80px;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
-
-  outline: 1px solid red;
+  width: 100%;
 }

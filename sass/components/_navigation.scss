@@ -1,12 +1,8 @@
 /* Navigation */
 .navigation {
-  //   @include flex-center();
-  //   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  outline: 1px solid red;
 }
 
 .navigation__list {

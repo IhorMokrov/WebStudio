@@ -1,0 +1,40 @@
+/* Regular customers */
+
+.customers {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customers__item:not(:last-child) {
+  //   margin-right: 30px;
+
+  //   outline: 1px solid red;
+}
+
+.customers__link {
+  //   @include flex-center();
+  //   justify-content: center;
+  //   width: 170px;
+  //   height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 52px;
+
+  max-width: 210px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $icon-inactive;
+
+  transition: fill 250ms $cubic-animation, border-color 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    fill: $focus-color;
+    border-color: $focus-color;
+  }
+}
