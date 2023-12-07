@@ -6,6 +6,21 @@
   flex-wrap: wrap;
 }
 
+.customers__item {
+  margin-bottom: 30px;
+
+  min-width: calc((100% - 30px) / 2);
+  max-width: calc((100% - 30px) / 2);
+
+  &:nth-child(2n) {
+    margin-left: 30px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 .customers__item:not(:last-child) {
   //   margin-right: 30px;
 
@@ -20,8 +35,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 16px 52px;
 
   max-width: 210px;
   height: 92px;
