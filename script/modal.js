@@ -1,3 +1,4 @@
+// OLD JS
 const refs = {
   openModalBtn: document.querySelector("[data-open-modal]"),
   closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -16,3 +17,20 @@ function toggleModal() {
 function logBackdropClick() {
   console.log("Это клик в бекдроп");
 }
+
+// NEW JS:
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
