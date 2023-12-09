@@ -236,7 +236,7 @@ summary {
   display: list-item;
 }
 
-.portfolio, .portfolio-nav, .features, .address__contacts, .customers, .our-team, .social-list {
+.portfolio, .portfolio-nav, .features, .address__contacts, .customers, .our-team, .social-list, .mobile-menu-social-list, .nav-contacts, .navigation__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -358,14 +358,33 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  outline: 1px solid red;
 }
 
-.navigation__list {
+.navigation__menu {
   display: none;
 }
 
-.nav-contacts {
-  display: none;
+.navigation__menu.is-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #ffffff;
 }
 
 .navigation__menu-icon {
@@ -374,6 +393,57 @@ address {
 }
 .navigation__menu-icon:hover, .navigation__menu-icon:focus {
   fill: #2196f3;
+}
+
+.navigation__item + .navigation__item {
+  margin-top: 32px;
+}
+
+.navigation__link {
+  height: inherit;
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: #2196f3;
+}
+
+.nav-contacts__item + .nav-contacts__item {
+  margin-top: 32px;
+}
+
+.mobile-menu-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mobile-menu-social-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 22px;
+}
+.mobile-menu-social-list__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu-social-list__item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu-social-list__link {
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .social-list {
