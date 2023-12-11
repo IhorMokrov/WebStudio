@@ -22,29 +22,59 @@
                     <span class="logo__text logo__text--black">Studio</span>
                 </a>
 
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link " href="./index.html">Studio</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--current"
-                            href="./portfolio.html">Portfolio</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="">Contacts</a></li>
-                </ul>
+                <svg class="navigation__menu-icon" width="40" height="40" data-menu-button>
+                    <use href="./images/icons.svg#icon-menu-mobile"></use>
+                </svg>
+
+                <div class="navigation__menu" data-menu>
+
+                    <button class="navigation__cross-button" type="button">
+                        <svg class="navigation__cross-icon" width="40" height="40" data-menu-button-close>
+                            <use href="./images/icons.svg#icon-mobile-menu-cross"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link navigation__link--current"
+                                href="./index.html">Studio</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="navigation__item"><a class="navigation__link" href="">Contacts</a></li>
+                    </ul>
+
+                    <ul class="nav-contacts">
+                        <!-- Email -->
+                        <li class="nav-contacts__item">
+                            <a class="nav-contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="nav-contacts__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+
+                        <!-- Phone -->
+                        <li class="nav-contacts__item"><a class="nav-contacts__link" href="tel:+380961111111">
+                                <svg class="nav-contacts__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>+38 096 111 11 11</a></li>
+                    </ul>
+
+                    <ul class="mobile-menu-social-list">
+                        <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link"
+                                href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link"
+                                href="">Twitter</a></li>
+                        <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link"
+                                href="">Facebook</a></li>
+                        <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link"
+                                href="">LinkedIn</a></li>
+                    </ul>
+                </div>
             </nav>
 
 
-            <ul class="nav-contacts">
-                <li class="nav-contacts__item">
-                    <a class="nav-contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="nav-contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
 
-                <li class="nav-contacts__item"><a class="nav-contacts__link" href="tel:+380961111111">
-                        <svg class="nav-contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
 
         </div>
     </header>
@@ -71,7 +101,8 @@
                     <a class="portfolio__link" href="">
 
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/technocryak.jpg" width="370px" height="294px" alt="TechGen">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/technocryak.jpg" width="370px"
+                                height="294px" alt="TechGen">
                             <p class="portfolio-overlay__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing .
                                 Fugiat distinctio
                                 eius nobis tempora eum aperiam odit hic fugit odio non ducimus, expedita praesentium
@@ -87,8 +118,8 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/poster-new-orlean.jpg" width="370px" height="294px"
-                                alt="Poster New Orlean vs Golden Star">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/poster-new-orlean.jpg"
+                                width="370px" height="294px" alt="Poster New Orlean vs Golden Star">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius
@@ -106,8 +137,8 @@
                 <li class="portfolio__item">
                     <a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/restraunt-seafood.jpg" width="370px" height="294px"
-                                alt="Restaurant Seafood">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/restraunt-seafood.jpg"
+                                width="370px" height="294px" alt="Restaurant Seafood">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius nobis</p>
@@ -121,8 +152,8 @@
                 </li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/project-prime.jpg" width="370px" height="294px"
-                                alt="Project Prime">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/project-prime.jpg"
+                                width="370px" height="294px" alt="Project Prime">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius nobis
@@ -140,8 +171,8 @@
                     </a></li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/project-boxes.jpg" width="370px" height="294px"
-                                alt="Проект Boxes">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/project-boxes.jpg"
+                                width="370px" height="294px" alt="Проект Boxes">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius nobis
@@ -159,7 +190,8 @@
                     </a></li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/inspiration-has-no-borders.jpg" width="370px" height="294px"
+                            <img class="portfolio-overlay__image"
+                                src="./images/portfolio/inspiration-has-no-borders.jpg" width="370px" height="294px"
                                 alt="Inspiration has no Borders">
                             <p class="portfolio-overlay__paragraph">lmLorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Fugiat
@@ -178,8 +210,8 @@
                     </a></li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/edition-limited-edition.jpg" width="370px" height="294px"
-                                alt="Издание Limited Edition">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/edition-limited-edition.jpg"
+                                width="370px" height="294px" alt="Издание Limited Edition">
                             <p class="portfolio-overlay__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Fugiat
                                 distinctio eius nobis
@@ -197,7 +229,8 @@
                     </a></li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/project-lab.jpg" width="370px" height="294px" alt="Проект LAB">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/project-lab.jpg" width="370px"
+                                height="294px" alt="Проект LAB">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius nobis
@@ -215,8 +248,8 @@
                     </a></li>
                 <li class="portfolio__item"><a class="portfolio__link" href="">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/growing-business.jpg" width="370px" height="294px"
-                                alt="Growing Business">
+                            <img class="portfolio-overlay__image" src="./images/portfolio/growing-business.jpg"
+                                width="370px" height="294px" alt="Growing Business">
                             <p class="portfolio-overlay__paragraph">lormLorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fugiat
                                 distinctio eius nobis
@@ -298,7 +331,7 @@
                 <h3 class="subscribe-footer__title">SUBSCRIBE TO NEWSLETTER</h3>
 
                 <form class="subscribe-footer__form">
-                    <label>
+                    <label class="subscribe-footer__label">
                         <input class="subscribe-footer__input" type="email" name="email" id="email" placeholder="E-mail"
                             required>
                         <button class="subscribe-footer__button" type="submit">
@@ -313,7 +346,7 @@
 
         </div>
     </footer>
-
+    <script src="./script/menu.js"></script>
 </body>
 
 </html>

@@ -30,6 +30,7 @@
 
 .navigation__menu.is-open {
   transform: translateY(100%);
+  z-index: 1;
 }
 
 .navigation__cross-button {
