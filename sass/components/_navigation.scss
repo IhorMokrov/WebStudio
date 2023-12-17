@@ -26,6 +26,13 @@
   background-color: $primary-white;
 
   transition: transform 250ms $cubic-animation;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    height: 100%;
+    padding: 0;
+    flex-direction: row;
+  }
 }
 
 .navigation__menu.is-open {
@@ -33,7 +40,7 @@
   z-index: 1;
 }
 
-.navigation__cross-button {b
+.navigation__cross-button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -57,6 +64,10 @@
   &:hover,
   &:focus {
     fill: $focus-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -94,6 +105,10 @@
   &:hover,
   &:focus {
     color: $focus-color;
+  }
+
+  @media screen and (width: $tablet) {
+    font-size: 14px;
   }
 }
 
@@ -170,6 +185,10 @@
   flex-wrap: wrap;
 
   @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .mobile-menu-social-list__item {
