@@ -328,6 +328,7 @@ button {
 
 .page-header__container {
   width: 100%;
+  height: 100%;
 }
 
 /* Logo */
@@ -365,6 +366,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 
 .navigation__menu {
@@ -395,12 +397,13 @@ button {
 @media screen and (min-width: 768px) {
   .navigation__menu {
     position: static;
-    height: 100%;
-    padding: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 100%;
+    padding: 0;
+    margin-left: 93px;
   }
 }
 
@@ -456,6 +459,14 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 0;
+    height: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    position: relative;
+    height: inherit;
   }
 }
 
@@ -465,6 +476,7 @@ button {
 @media screen and (min-width: 768px) {
   .navigation__item + .navigation__item {
     margin-top: 0;
+    margin-left: 50px;
   }
 }
 
@@ -482,10 +494,41 @@ button {
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
   }
 }
 
+.navigation__link--current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  content: "";
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link--current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    content: "";
+  }
+}
 .nav-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +548,9 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 0;
   }
 }
@@ -532,6 +578,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .nav-contacts__item + .nav-contacts__item {
+    margin-top: 10px;
     font-size: 12px;
   }
 }
@@ -551,7 +598,12 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 12px;
+    line-height: normal;
+    color: #757575;
   }
 }
 
@@ -661,6 +713,19 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .our-team__item {
   padding-bottom: 24px;
   border-radius: 0px 0px 4px 4px;
@@ -673,14 +738,28 @@ button {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    min-width: 354px;
+    margin-bottom: 30px;
+  }
+  .our-team__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
 
 .our-team__image {
   margin-bottom: 30px;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: calc(768px-1px)) {
   .our-team__image {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team__image {
+    max-width: 354px;
   }
 }
 
@@ -1225,9 +1304,31 @@ button {
 }
 
 /* Features */
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .features__item:not(:first-child) {
     margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    margin-bottom: 30px;
+    max-width: 354px;
+  }
+  .features__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1259,6 +1360,11 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__text {

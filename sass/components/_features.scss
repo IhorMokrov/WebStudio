@@ -2,14 +2,27 @@
 
 .features {
   @extend %list;
-  //   display: flex;
-  //   justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
   @media screen and (max-width: 479px) {
     &:not(:first-child) {
       margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    max-width: 354px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -45,6 +58,10 @@
   font-size: 14px;
 
   line-height: 1.14;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 
 .features__text {
