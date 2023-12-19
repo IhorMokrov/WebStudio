@@ -3,21 +3,24 @@
 .customers {
   @extend %list;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .customers__item {
   margin-bottom: 30px;
-
   min-width: calc((100% - 30px) / 2);
-  max-width: calc((100% - 30px) / 2);
 
-  &:nth-child(2n) {
-    margin-left: 30px;
-  }
+  // &:nth-child(2n) {
+  //   margin-left: 30px;
+  // }
 
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: calc((100% - 60px) / 3);
   }
 }
 

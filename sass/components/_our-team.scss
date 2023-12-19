@@ -21,7 +21,7 @@
 
   background-color: $primary-white;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
