@@ -12,11 +12,21 @@
   align-items: center;
 
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
 }
+
 .footer__container {
   //   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 // Contacts
@@ -68,6 +78,11 @@
   margin-top: 60px;
 
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+    width: 50%;
+  }
 }
 
 .social-footer__title {
@@ -90,6 +105,11 @@
 
 .footer__subscribe-footer {
   //   margin-left: 93px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-footer__title {
@@ -132,6 +152,10 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
   }
 }
 
