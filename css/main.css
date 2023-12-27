@@ -314,6 +314,13 @@ button {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1170px;
+  }
+}
 
 /* Header */
 .page-header {
