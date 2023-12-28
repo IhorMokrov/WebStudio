@@ -3,8 +3,11 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section--darker {
@@ -14,17 +17,17 @@
 .section__title {
   margin-top: 0;
 
-  //   margin-bottom: 50px;
   margin-bottom: 30px;
-
   font-size: 28px;
-  //   font-size: 36px;
-
   font-weight: 700;
-
   line-height: normal;
-  //   line-height: 1.17;
+  line-height: 1.17;
 
   color: $inactive-black;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }

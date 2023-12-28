@@ -11,10 +11,6 @@
   margin-bottom: 30px;
   min-width: calc((100% - 30px) / 2);
 
-  // &:nth-child(2n) {
-  //   margin-left: 30px;
-  // }
-
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
@@ -22,19 +18,14 @@
   @media screen and (min-width: $tablet) {
     min-width: calc((100% - 60px) / 3);
   }
-}
 
-.customers__item:not(:last-child) {
-  //   margin-right: 30px;
-
-  //   outline: 1px solid red;
+  @media screen and (min-width: $desktop) {
+    min-width: calc((100% - 150px) / 6);
+    margin-bottom: 0;
+  }
 }
 
 .customers__link {
-  //   @include flex-center();
-  //   justify-content: center;
-  //   width: 170px;
-  //   height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
