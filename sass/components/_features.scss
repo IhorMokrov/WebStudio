@@ -25,6 +25,11 @@
       margin-bottom: 0px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
 }
 
 .container__features {
