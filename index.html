@@ -243,9 +243,20 @@
         <h2 class="section__title">Our team</h2>
         <ul class="our-team">
           <li class="our-team__item">
-            <img class="our-team__image"
-              srcset="./images/ihor-demyanenko-desktop.jpg 1x, ./images/ihor-demyanenko-desktop@2x.jpg 2x "
-              src="./images/ihor-demyanenko-desktop.jpg" alt="Ihor Demyanenko" width="270" />
+            <picture>
+
+              <source srcset="./images/ihor-demyanenko-desktop.jpg 1x, ./images/ihor-demyanenko-desktop@2x.jpg 2x, "
+                media="(min-width:1200px)" />
+
+              <source srcset="./images/ihor-demyanenko-tablet.jpg 1x, ./images/ihor-demyanenko-tablet@2x.jpg 2x, "
+                media="(min-width:768px)" />
+
+              <source srcset="./images/ihor-demyanenko-mobile.jpg 1x, ./images/ihor-demyanenko-mobile@2x.jpg 2x, "
+                media="(max-width:767px)" />
+
+              <img class="our-team__image" src="./images/ihor-demyanenko-desktop.jpg" alt="Ihor Demyanenko" />
+            </picture>
+
             <p class="our-team__name">Ihor Dem'yanenko</p>
             <p class="our-team__position">Product Designer</p>
             <!-- Social list #1 -->
@@ -307,8 +318,9 @@
 
           </li>
           <li class="our-team__item">
-            <img class="our-team__image" src="./images/our-team-nikolay-tarasov.jpg" alt="Nikolay Tarasov"
-              width="270" />
+            <img class="our-team__image"
+              srcset="./images/nikolay-tarasov-desktop.jpg 1x, ./images/nikolay-tarasov-desktop@2x.jpg 2x"
+              src="./images/nikolay-tarasov-desktop.jpg" alt="Nikolay Tarasov" width="270" />
             <p class="our-team__name">Mikolay Tarasiv</p>
             <p class="our-team__position">Marketing</p>
             <!-- Social list #3 -->
@@ -337,8 +349,9 @@
             </ul>
           </li>
           <li class="our-team__item">
-            <img class="our-team__image" src="./images/our-team-mikhail-ermakov.jpg" alt="Mikhail Ermakov"
-              width="270" />
+            <img class="our-team__image"
+              srcset="./images/mikhail-ermakov-desktop.jpg 1x, ./images/mikhail-ermakov-desktop@2x.jpg 2x"
+              src="./images/mikhail-ermakov-desktop.jpg" alt="Mikhail Ermakov" width="270" />
             <p class="our-team__name">Mikhailo Ermakov</p>
             <p class="our-team__position">UI Designer</p>
             <!-- Social list #4 -->
