@@ -285,9 +285,17 @@
             </ul>
           </li>
           <li class="our-team__item">
-            <img class="our-team__image"
-              srcset="./images/olha-repina-desktop.jpg 1x, ./images/olha-repina-desktop@2x.jpg 2x" src="
-              ./images/olha-repina-desktop.jpg" alt="Olha Repina" width="270" />
+            <picture>
+              <source srcset="./images/olha-repina-desktop.jpg 1x, ./images/olha-repina-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <source srcset="./images/olha-repina-tablet.jpg 1x, ./images/olha-repina-tablet@2x.jpg 2x"
+                media="(min-width:768px)">
+              <source srcset="./images/olha-repina-mobile.jpg 1x, ./images/olha-repina-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+              <img class="our-team__image" src="./images/olha-repina-desktop.jpg" alt="Olha Repina">
+            </picture>
+
+
             <p class="our-team__name">Olha Repina</p>
             <p class="our-team__position">Frontend Developer</p>
 
@@ -318,9 +326,16 @@
 
           </li>
           <li class="our-team__item">
-            <img class="our-team__image"
-              srcset="./images/nikolay-tarasov-desktop.jpg 1x, ./images/nikolay-tarasov-desktop@2x.jpg 2x"
-              src="./images/nikolay-tarasov-desktop.jpg" alt="Nikolay Tarasov" width="270" />
+            <picture>
+              <source srcset="./images/nikolay-tarasov-desktop.jpg 1x, ./images/nikolay-tarasov-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <source srcset="./images/nikolay-tarasov-tablet.jpg 1x, ./images/nikolay-tarasov-tablet@2x.jpg 2x"
+                media="(min-width:768px)">
+              <source srcset="./images/nikolay-tarasov-mobile.jpg 1x, ./images/nikolay-tarasov-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+              <img src="./images/nikolay-tarasov-desktop.jpg" alt="Nikolay Tarasiv" />
+            </picture>
+
             <p class="our-team__name">Mikolay Tarasiv</p>
             <p class="our-team__position">Marketing</p>
             <!-- Social list #3 -->
@@ -349,9 +364,17 @@
             </ul>
           </li>
           <li class="our-team__item">
-            <img class="our-team__image"
-              srcset="./images/mikhail-ermakov-desktop.jpg 1x, ./images/mikhail-ermakov-desktop@2x.jpg 2x"
-              src="./images/mikhail-ermakov-desktop.jpg" alt="Mikhail Ermakov" width="270" />
+            <picture>
+              <source srcset="./images/mikhail-ermakov-desktop.jpg 1x, ./images/mikhail-ermakov-desktop@2x.jpg 2x"
+                media="(min-width:1200px)" />
+              <source srcset="./images/mikhail-ermakov-tablet.jpg 1x, ./images/mikhail-ermakov-tablet@2x.jpg 2x"
+                media="(min-width:768px)" />
+              <source srcset="./images/mikhail-ermakov-mobile.jpg 1x, ./images/mikhail-ermakov-mobile@2x.jpg 2x"
+                media="(max-width:767px)" />
+              <img src="./images/mikhail-ermakov-desktop.jpg" alt="Mikhail Ermakov" />
+            </picture>
+
+
             <p class="our-team__name">Mikhailo Ermakov</p>
             <p class="our-team__position">UI Designer</p>
             <!-- Social list #4 -->
