@@ -9,34 +9,32 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.5),
-      rgba(47, 48, 58, 0.5)
-    ),
-    url(../images/hero-background-desktop.jpg);
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(47, 48, 58, 0.5),
+  //     rgba(47, 48, 58, 0.5)
+  //   ),
+  //   url(../images/hero-background-desktop.jpg);
   background-color: #c4c4c4;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (max-width: 767px) {
-    // background-image: linear-gradient(
-    //     to right,
-    //     rgba(47, 48, 58, 0.5),
-    //     rgba(47, 48, 58, 0.5)
-    //   ),
-    //   url(../../images/hero-background-mobile.jpg);
-    color: #111111;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../../images/hero-background-mobile.jpg);
 
     @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-      // background-image: linear-gradient(
-      //     to right,
-      //     rgba(47, 48, 58, 0.5),
-      //     rgba(47, 48, 58, 0.5)
-      //   ),
-      //   url(../../images/hero-background-mobile@2x.jpg);
-      color: #222222;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.5),
+          rgba(47, 48, 58, 0.5)
+        ),
+        url(../../images/hero-background-mobile@2x.jpg);
     }
   }
 

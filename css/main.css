@@ -1145,8 +1145,6 @@ button {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/hero-background-desktop.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../images/hero-background-desktop.jpg);
   background-color: #c4c4c4;
   background-position: center;
   background-repeat: no-repeat;
@@ -1154,12 +1152,14 @@ button {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    color: #111111;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../../images/hero-background-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../../images/hero-background-mobile.jpg);
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .hero {
-    color: #222222;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../../images/hero-background-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../../images/hero-background-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
