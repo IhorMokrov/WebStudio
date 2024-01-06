@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-responsive web design
+# WebStudio
+adaptive web design
