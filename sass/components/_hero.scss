@@ -14,17 +14,53 @@
       rgba(47, 48, 58, 0.5),
       rgba(47, 48, 58, 0.5)
     ),
-    url(../images/hero-background.jpg);
+    url(../images/hero-background-desktop.jpg);
   background-color: #c4c4c4;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    // background-image: linear-gradient(
+    //     to right,
+    //     rgba(47, 48, 58, 0.5),
+    //     rgba(47, 48, 58, 0.5)
+    //   ),
+    //   url(../../images/hero-background-mobile.jpg);
+    color: #111111;
+
+    @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+      // background-image: linear-gradient(
+      //     to right,
+      //     rgba(47, 48, 58, 0.5),
+      //     rgba(47, 48, 58, 0.5)
+      //   ),
+      //   url(../../images/hero-background-mobile@2x.jpg);
+      color: #222222;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../../images/hero-background-tablet.jpg);
+  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url(../../images/hero-background-desktop.jpg);
   }
 }
 
